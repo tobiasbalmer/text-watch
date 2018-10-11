@@ -1,0 +1,30 @@
+.clock-digit
+    display: inline-block
+    margin-right: 5px
+    margin-bottom: 5px
+    padding: 5px
+    border: 1px solid transparent
+    color: #6c6c6c
+    text-transform: uppercase
+    font-size: 8vw
+    transition-duration: 0.3s
+
+    &--active
+        color: #fff
+        text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 8px rgb(184, 232, 255), 0 0 16px rgb(184, 232, 255), 0 0 32px rgb(184, 232, 255), 0 0 64px rgb(184, 232, 255)
+        text-align: center
+
+
+@media only screen and (min-width: 600px)
+    .clock-digit
+        margin-right: 10px
+        margin-bottom: 10px
+        padding: 10px
+        font-size: 6vw
+
+@media only screen and (min-width: 800px)
+    .clock-digit
+        margin-right: 15px
+        margin-bottom: 15px
+        padding: 15px
+        font-size: 3.5vw
