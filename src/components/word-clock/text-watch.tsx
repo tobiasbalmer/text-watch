@@ -33,6 +33,7 @@ export class textWatch {
     }
 
     this.minute = this.round5(now.getMinutes());
+
     if(this.minute > 30 && this.minute <= 60) {
       this.hour = this.hour + 1;
     }
@@ -41,7 +42,7 @@ export class textWatch {
       this.hour = this.hour - 24;
     }
 
-    if(this.hour < 0) {
+    if(this.hour <= 0) {
       this.hour = 24 - this.hour;
     }
   }
